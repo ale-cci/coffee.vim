@@ -7,12 +7,11 @@
 "     finish
 " endif
 
-
 syn match coffeeComment '--.*$'
-syn match coffeeComment '^#.*$'
+syn match coffeeComment '#.*$'
 syn match coffeeNumber '\d\+'
 syn keyword coffeeType void int str
-syn keyword coffeeKeyword return if for extern
+syn keyword coffeeKeyword return if for extern import
 syn region coffeeString start='"' end='"'
 
 
