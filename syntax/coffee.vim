@@ -21,7 +21,7 @@ syn match coffeeOperator "\v\>"
 syn match coffeeComment '#.*$'
 syn match coffeeNumber '\d\+'
 syn keyword coffeeType void int str bool chr
-syn keyword coffeeKeyword return if for extern import as
+syn keyword coffeeKeyword return if for extern import as alias struct
 
 syn match coffeeComment '--.*$'
 syn region coffeeString start='"' end='"'
