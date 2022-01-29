@@ -1,3 +1,3 @@
 augroup filetype
-    au! BufRead,BufNewFile *.bn set filetype=coffee
+    au! BufRead,BufNewFile *.bn setlocal filetype=coffee suffixesadd=.bn
 augroup END
