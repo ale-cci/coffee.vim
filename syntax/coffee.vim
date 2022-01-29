@@ -10,8 +10,8 @@
 syn match coffeeComment '--.*$'
 syn match coffeeComment '#.*$'
 syn match coffeeNumber '\d\+'
-syn keyword coffeeType void int str
-syn keyword coffeeKeyword return if for extern import
+syn keyword coffeeType void int str bool chr
+syn keyword coffeeKeyword return if for extern import as
 syn region coffeeString start='"' end='"'
 
 
