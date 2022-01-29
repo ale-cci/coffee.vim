@@ -7,16 +7,10 @@
 "     finish
 " endif
 
-syn match coffeeComment '--.*$'
-syn match coffeeComment '#.*$'
-syn match coffeeNumber '\d\+'
-syn keyword coffeeType void int str bool chr
-syn keyword coffeeKeyword return if for extern import as
-
 syn match coffeeOperator "\v\*"
 syn match coffeeOperator "\v/"
 syn match coffeeOperator "\v\+"
-syn match coffeeOperator "\v-"
+syn match coffeeOperator "\v-\v"
 syn match coffeeOperator "\v\=\="
 syn match coffeeOperator "\v\&"
 syn match coffeeOperator "\v\|"
@@ -24,6 +18,12 @@ syn match coffeeOperator "\v\!\="
 syn match coffeeOperator "\v\<"
 syn match coffeeOperator "\v\>"
 
+syn match coffeeComment '#.*$'
+syn match coffeeNumber '\d\+'
+syn keyword coffeeType void int str bool chr
+syn keyword coffeeKeyword return if for extern import as
+
+syn match coffeeComment '--.*$'
 syn region coffeeString start='"' end='"'
 
 
