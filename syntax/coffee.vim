@@ -17,17 +17,20 @@ syn match coffeeOperator "\v\|"
 syn match coffeeOperator "\v\!\="
 syn match coffeeOperator "\v\<"
 syn match coffeeOperator "\v\>"
+syn match coffeeNumber '\<\d\+\>'
 
 
-syn match coffeeNumber '\d\+'
+
 syn keyword coffeeType void int str bool chr
-syn keyword coffeeKeyword return if for extern import as alias struct
+syn keyword coffeeKeyword return if for extern import as alias struct else elif
 
 syn match coffeeComment '#.*$'
 syn match coffeeComment '--.*$'
 
 syn region coffeeString start='"' end='"'
-syn match coffeeCharacter "\v'(\\\d\d|.)'\v"
+syn match coffeeCharacter "\v'(\\[0-9A-F]{2}|.)'\v"
+
+syn keyword coffeeBoolean true false
 
 
 hi def link coffeeType Type
@@ -37,3 +40,4 @@ hi def link coffeeComment Comment
 hi def link coffeeString String
 hi def link coffeeOperator Operator
 hi def link coffeeCharacter Character
+hi def link coffeeBoolean Boolean
