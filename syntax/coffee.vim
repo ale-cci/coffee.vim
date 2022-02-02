@@ -23,6 +23,7 @@ syn match coffeeNumber '\<\d\+\>'
 
 syn keyword coffeeType void int str bool chr
 syn keyword coffeeKeyword return if for extern import as alias struct else elif
+syn keyword coffeeConstant null
 
 syn match coffeeComment '#.*$'
 syn match coffeeComment '--.*$'
@@ -41,3 +42,4 @@ hi def link coffeeString String
 hi def link coffeeOperator Operator
 hi def link coffeeCharacter Character
 hi def link coffeeBoolean Boolean
+hi def link coffeeConstant Constant
