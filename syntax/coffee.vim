@@ -17,6 +17,9 @@ syn match coffeeOperator "\v\|"
 syn match coffeeOperator "\v\!\="
 syn match coffeeOperator "\v\<"
 syn match coffeeOperator "\v\>"
+syn match coffeeOperator "\v\<\="
+syn match coffeeOperator "\v\>\="
+
 syn match coffeeNumber '\<\d\+\>'
 
 
